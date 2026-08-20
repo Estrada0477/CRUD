@@ -44,14 +44,14 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+    <div class="carousel-item active"> 
+      <img src="https://img.magnific.com/psd-premium/uniforme-escolar-psd-fondo-transparente-capa-mascara-editable_1026553-74263.jpg?semt=ais_hybrid&w=740&q=80" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://img.magnific.com/psd-premium/uniforme-escolar-psd-fondo-transparente-capa-mascara-editable_1026553-74263.jpg?semt=ais_hybrid&w=740&q=80" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -63,6 +63,62 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<!-- FORMULARIO --><div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="form-floating mb-3">
+            <select class="form-select" id="escuela" aria-label="ESCUELA">
+                <option value="TECNICA 96">TECNICA 96</option>
+                <option value="TECNICA 92">TECNICA 92</option>
+                <option value="TECNICA 74">TECNICA 74</option>
+                <option value="TECNICA 72">TECNICA 72</option>
+                <option value="OTRAS">OTRAS</option>
+            </select>
+            <label for="escuela">ESCUELA</label>
+        </div>
+        <div class="form-floating mb-3">
+            <select class="form-select" id="tipoDeUniforme" aria-label="TIPO DE UNIFORME">
+                <option value="DEPORTIVO">DEPORTIVO</option>
+                <option value="DIARIO">DIARIO</option>
+            </select>
+            <label for="tipoDeUniforme">TIPO DE UNIFORME</label>
+        </div>
+        <div class="form-floating mb-3">
+            <select class="form-select" id="talla" aria-label="TALLA">
+                <option value="CHICO">CHICO</option>
+                <option value="MEDIANO">MEDIANO</option>
+                <option value="GRANDE">GRANDE</option>
+                <option value="EXTRAGRANDE">EXTRAGRANDE</option>
+            </select>
+            <label for="talla">TALLA</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="nombre" type="text" placeholder="NOMBRE" data-sb-validations="required" />
+            <label for="nombre">NOMBRE</label>
+            <div class="invalid-feedback" data-sb-feedback="nombre:required">NOMBRE is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="comentarios" type="text" placeholder="COMENTARIOS" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <label for="comentarios">COMENTARIOS</label>
+            <div class="invalid-feedback" data-sb-feedback="comentarios:required">COMENTARIOS is required.</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
